@@ -1,0 +1,14 @@
+php artisan make:migration create_barbers_table --create=barbers
+public function up(): void
+{
+    Schema::create('barbers', function (Blueprint $table) {
+        $table->id();
+        $table->string('name');
+        $table->string('designation')->nullable();
+        $table->string('image')->nullable();
+        $table->string('facebook')->nullable();
+        $table->string('twitter')->nullable();
+        $table->string('instagram')->nullable();
+        $table->timestamps();
+    });
+}

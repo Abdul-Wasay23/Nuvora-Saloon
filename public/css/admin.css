@@ -1,0 +1,264 @@
+/* Admin css  */
+.dashboard-left-detail-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 10px;
+}
+
+.dashboard-left-detail {
+    position: relative;
+}
+
+.dashboard-left-detail-text a {
+    color: #fff;
+}
+
+img.pattern-img {
+    background: #000000eb;
+    height: 250px;
+}
+
+.dashboard-left-detail-text * {
+    margin: 0;
+}
+
+.dropdown-nav1 {
+    display: none !important;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.dropdown-nav1.active {
+    display: block !important;
+}
+
+/* Hide dropdown initially */
+ul#homeDropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    background: #d48237;
+    overflow-y: scroll;
+}
+
+/* Active dropdown */
+ul#homeDropdown.show {
+    max-height: 500px;
+    height: 326px;
+}
+
+/* Dropdown links */
+ul#homeDropdown a {
+    color: #fff;
+    font-size: 16px;
+    padding: 9px 15px !important;
+    display: block;
+}
+
+
+.dashboard-left-nav a {
+    color: #fff;
+    padding: 15px 10px !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Squada One", sans-serif !important;
+    text-transform: uppercase;
+    font-size: 28px;
+    position: relative;
+    z-index: 1;
+    background: #000;
+    margin: 0;
+    border-bottom: 1px solid;
+}
+
+.dashboard-left-box {
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 32px rgb(0 0 0 / 29%);
+    overflow: hidden;
+}
+
+ul#homeDropdown a {
+    color: #fff !important;
+    font-size: 22px;
+    padding: 10px 15px !important;
+    background: #d48237;
+    border-bottom: 1px solid;
+}
+
+.dashboard-left-nav {
+    padding: 20px 0px 0px 0px;
+}
+
+.dashboard-left-nav a:hover,
+.dashboard-left-nav a:focus {
+    color: #fff !important;
+}
+
+.dashboard-left-nav a:before {
+    background: #d9842f;
+    width: 0;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s cubic-bezier(0.71, 0.52, 0, 1.13);
+}
+
+.dashboard-left-nav a:hover:before {
+    width: 100%;
+    z-index: -1;
+}
+
+ul#homeDropdown a::before {
+    background: #000;
+}
+
+
+ul#homeDropdown::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+}
+
+ul#homeDropdown::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+}
+
+ul#homeDropdown::-webkit-scrollbar-thumb {
+    background-color: #141414;
+    background-image: -webkit-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0.2) 75%,
+            transparent 75%,
+            transparent);
+}
+
+.dashboard-left-nav li {
+    text-align: left;
+    padding: 0 !important;
+}
+
+.dashboard-content h3 {
+    color: #000;
+}
+
+.nav-link.active {
+    background: #d9842f;
+    color: #000 !important;
+}
+
+.nav-inner ul#homeDropdown {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+}
+
+.nav-inner ul#homeDropdown {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    flex-wrap: nowrap;
+}
+
+.nav-inner ul#homeDropdown li {
+    width: 100%;
+}
+
+.fade:not(.show) {
+    opacity: 0;
+    display: none !important;
+}
+
+tab-pane.fade.active.show {
+    display: block !important;
+}
+
+.black {
+    color: #000;
+}
+
+img.service-table-image {
+    object-fit: scale-down;
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.sm-btn {
+    padding: 10px 25px;
+    border: none;
+}
+
+.service-manage {
+    display: inline-flex;
+    justify-content: start;
+    gap: 40px;
+    height: 100%;
+    align-items: center;
+}
+
+img.service-table-image {
+    object-fit: scale-down;
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    height: 100px;
+}
+
+.black-btn {
+    background-color: #000;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.alert {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99999;
+}
+
+img.edit-service-img {
+    width: 20%;
+    object-fit: contain;
+    height: 250px;
+    border: 1px solid #9f9f9f;
+    background: #e9ecef;
+}
+
+.dashboard-left-detail-text h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+
+img.barber-admin-img {
+    width: 90px;
+}
+img.mt-2.update-baber-img {
+    width: 250px;
+}
+/* Admin css  */
